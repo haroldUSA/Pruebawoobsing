@@ -55,7 +55,8 @@ public class WebService {
             
         // run the Unix "ps -ef" command
             // using the Runtime exec method:
-            Process p = Runtime.getRuntime().exec("python c:\\Users\\harld\\Downloads\\searchWord.py "+url.getUrl());
+            Process p = Runtime.getRuntime().exec("python3 /home/opc/repos/Pruebawoobsing/searchWord.py "+url.getUrl());
+            //Process p = Runtime.getRuntime().exec("python c:\\Users\\harld\\Downloads\\searchWord.py "+url.getUrl());
             
             BufferedReader stdInput = new BufferedReader(new 
                  InputStreamReader(p.getInputStream()));
